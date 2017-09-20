@@ -2,19 +2,25 @@
 import os
 import time
 
-#lets install some software
-#reminder :: vim autocomplete via 'Ctrl' + 'N'
-os.system('sudo apt-get update')
+#This will install my default software on 17.04 clean machine.
+#reminder :: vim autocomplete via 'Ctrl' + 'N'.
+
+os.system('sudo apt-get update -y')
 os.system('sudo apt-get upgrade -y')
-os.system('sudo apt-get dist-upgrade')
+os.system('sudo apt-get dist-upgrade -y')
 os.system('sudo apt-get install ipython -y')
 os.system('sudo apt-get install git')
 os.system('sudo apt-get install chromium-browser')
 os.system('wget https://wallpaper.wiki/wp-content/uploads/2017/04/wallpaper.wiki-Beautiful-Geek-Wallpaper-PIC-WPD004360.jpg')
 os.system('gsettings set org.gnome.desktop.background picture-uri "file:///home/just/Downloads/wallpaper.wiki-Beautiful-Geek-Wallpaper-PIC-WPD004360.jpg"')
-os.system('sudo apt-get update')
-os.system('sudo apt-get upgrade')
-os.system('sudo apt-get install net-tools')
-os.system('sudo apt-get install gparted')
-os.system('sudo apt autoremove')
+os.system('sudo apt-get update -y')
+os.system('sudo apt-get upgrade -y')
+os.system('sudo apt-get install net-tools -y')
+os.system('sudo apt-get install gparted -y')
+os.system('sudo apt autoremove -y')
+os.system('sudo apt-get intall python-termcolor -y')
+os.system('sudo apt-get install ssh')
+from termcolor import colored
+
+print (colored("Done.",'green'))
 
